@@ -1,0 +1,168 @@
+// write funcation
+
+// let name = 'Muhammad Usman';
+// document.write('Hello ' +name );
+
+// variable
+// let variable = 5;
+// console.log(variable)
+
+// comparision operators
+// !==
+// let a = 5;
+// let b = 6;
+// console.log(a != b); // a is not equal to b
+
+// ===
+// let a = 'usman';
+// let b = 'maliaka';
+// console.log ( a !== b); // a is equal to b
+
+// logical operators
+// && true
+// let a = 5;
+// let b = 6;
+// console.log(a > b && a < b);
+
+// // a is greater than b and a is less than b
+// // ||
+// let c = 5;
+// let d = 6;
+// console.log(c > d || c < d);
+// // !
+// let e = 5;
+// let f = 6;
+// console.log(!e > f);
+
+// Bitwise opertors
+
+// let a = 5;
+// let b = 6;
+// console.log(a & b);
+// console.log(a | b);
+// console.log(a ^ b);
+
+// assignment operators compelte
+// let a = 5;
+// let b = 6;
+// a += b;
+// a -= b;
+// a /= b;
+// a *= b;
+// console.log(a+=b);
+// console.log(a-=b);
+// console.log(a/=b);
+// console.log(a*=b);
+// console.log(a%=b);
+
+// ternary operator
+// let age = 12;
+// let drink = age >= 18 ? "beer" : "juice";
+// console.log(drink);
+
+// if statement
+// let age = 18;
+// if (age <= 18) {
+//     console.log("you are eligible to vote");
+// }
+
+// if else statement
+// let age = 17;
+// if (age >= 18) {
+//     console.log("you are eligible to vote");
+// } else {
+//     console.log("you are not eligible to vote");
+// }
+// else if
+// let age = 11;
+// if (age >= 18) {
+//     console.log("you are eligible to vote");
+// } else if (age >= 12) {
+//     console.log("you are not eligible to vote");
+// } else {
+//     alert('Ghar bataie')
+// }
+
+// Loop
+// for loop
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+// while loop
+// let i = 0;
+// while (i < 10) {
+//     console.log(i);
+//     i++;
+// }
+// do while loop
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 10);
+//
+
+// for (let i = 5; i < 50; i++) {
+//   let j = 12;
+//   j = i + 5;
+//   console.log("j " + j);
+// }
+// let j = 0;
+// for (let i = 1; i < 10; i++) {
+//     let k = i + 2;
+//     j = j + k
+//     console.log(j);
+// }
+
+// let j = 10000;
+// for (let i = 1000; i<10005; i++) {
+//     j = j - i;
+//     console.log(j)
+// }
+
+// for (let i = 0; i<10; i++) {
+//         console.log('Outer Loop' + i)
+//         for (j=0;j<5; j++ ) {
+//             console.log('Inner Loop' + j)
+//         }
+// }
+// print 5 table in for loop
+// for (let i = 1; i <= 10; i++) {
+//   console.log("5 *", i, "=", i * 5);
+// }
+
+//
+// Tabel print 2 to 6 or using nested for loop
+// for (let i = 2; i <= 6; i++) {
+//       for (let j = 1; j <= 10; j++) {
+//     console.log(i, "*", j, "=", i * j);
+//       }}
+
+// Q 3 Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers multiples of both three and five print "FizzBuzz"
+// for (let i = 1; i < 100; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log(" FizzBuzz "+ i);
+//   } else if (i % 3 == 0) {
+//     console.log( " Fizz "+i);
+//   } else if (i % 5 == 0) {
+//     console.log(" Buzz  "+i);
+//   } else {
+//     console.log('all '+i);
+//   }
+// }
+// let i = 1;
+// while(i<= 100) {
+//     for (let i = 1; i < 100; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log(" FizzBuzz "+ i);
+//   } else if (i % 3 == 0) {
+//     console.log( " Fizz "+i);
+//   } else if (i % 5 == 0) {
+//     console.log(" Buzz  "+i);
+//   } else {
+//     console.log('all '+i);
+//   }
+// }
+// }
+// Q 4
+// write a while loop in which it will take a input number from even and odd it continuously until the user enter the negative number once user enter negative number it show the alert that "U have entered a negative number " your sum is

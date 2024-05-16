@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Arry Methonds</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 90vh;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      color: antiquewhite;
+    }
+  </style>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits;
+      fruits.unshift('lemon');
+      document.getElementById("demo1").innerHTML = fruits;
+    </script>
+  </body>
+</html>
