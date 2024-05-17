@@ -165,4 +165,16 @@
 // }
 // }
 // Q 4
-// write a while loop in which it will take a input number from even and odd it continuously until the user enter the negative number once user enter negative number it show the alert that "U have entered a negative number " your sum is
+// Take input from a user which will be a number check that if that input is event then show alert that it is even  it odd then show alert that it si odd
+// let num = parseInt(prompt('Enter a Number'));
+// console.log(typeof num)
+// switch (num % 2) {
+//     case 1:
+//     alert('Even')
+//     break;
+//     case 2:
+//         alert('odd')
+//         break;
+//         default:
+//             alert('invalid')
+// }
