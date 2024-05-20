@@ -139,9 +139,37 @@
 // console.log(i)
 // }
 
-// funcation in js
-function myfunction() {
-  let obj = [(age = 20)].push(50);
-  console.log(obj);
-}
-myfunction();
+// Creating funcation
+// function display() {
+//     let fruit = prompt('Enter Fruit Name')
+//     switch (fruit) {
+//         case "apple":
+//            alert("This is an apple.");
+//             break;
+//         case "orange":
+//            alert("This is an orange.");
+//             break;
+//         case "banana":
+//            alert("This is a banana.");
+//             break;
+//         default:
+//            alert("I'm not sure what fruit this is.");
+//             break;
+//     }
+// }
+// display();
+
+// How function call work
+// console.log('Fist Line')
+// console.log('Hello World!')
+// function display() {
+//     console.log('Inside Function')
+// }
+// console.log('Last Line')
+// display()
+
+// function with Parameters in javascript
+function display(name, age) {
+        console.log('Hello ' + name + ' you are ' + age + ' years old')
+    }
+    display('Usman', 21)
