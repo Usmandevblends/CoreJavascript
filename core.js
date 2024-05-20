@@ -168,8 +168,17 @@
 // console.log('Last Line')
 // display()
 
-// function with Parameters in javascript
-function display(name, age) {
-        console.log('Hello ' + name + ' you are ' + age + ' years old')
-    }
-    display('Usman', 21)
+// function car() {
+//     let CarPriceAli = 1500;
+//     let CarPriceUsman = 80;
+//     let dff = CarPriceAli - CarPriceUsman;
+//     console.log(dff);
+// }
+// car()
+
+// function with parameter in js
+// function car(price1 , price2) {
+//     let dff = price1 - price2;
+//     console.log(dff);
+// }
+// car(1500, 80);
