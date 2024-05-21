@@ -177,8 +177,9 @@
 // car()
 
 // function with parameter in js
-// function car(price1 , price2) {
-//     let dff = price1 - price2;
-//     console.log(dff);
-// }
-// car(1500, 80);
+
+function car(price1 , price2) {
+    let dff = price1 - price2;
+    console.log(dff);
+}
+car(1500, 80);
