@@ -168,13 +168,13 @@
 // console.log('Last Line')
 // display()
 
-// function car() {
-//     let CarPriceAli = 1500;
-//     let CarPriceUsman = 80;
-//     let dff = CarPriceAli - CarPriceUsman;
-//     console.log(dff);
-// }
-// car()
+function car() {
+    let CarPriceAli = 1500;
+    let CarPriceUsman = 80;
+    let dff = CarPriceAli - CarPriceUsman;
+    console.log(dff);
+}
+car()
 
 // function with parameter in js
 
