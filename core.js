@@ -138,7 +138,6 @@
 //   }
 // console.log(i)
 // }
-
 // Creating funcation
 // function display() {
 //     let fruit = prompt('Enter Fruit Name')
@@ -152,6 +151,8 @@
 //         case "banana":
 //            alert("This is a banana.");
 //             break;
+//             case '[gava,apple,kwi ,bluebary]':
+//             alert("This is a banana.");
 //         default:
 //            alert("I'm not sure what fruit this is.");
 //             break;
@@ -168,18 +169,54 @@
 // console.log('Last Line')
 // display()
 
-function car() {
-    let CarPriceAli = 1500;
-    let CarPriceUsman = 80;
-    let dff = CarPriceAli - CarPriceUsman;
-    console.log(dff);
-}
-car()
+// function car() {
+//     let CarPriceAli = 1500;
+//     let CarPriceUsman = 80;
+//     let dff = CarPriceAli - CarPriceUsman;
+//     console.log(dff);
+// }
+// car()
 
 // function with parameter in js
 
-function car(price1 , price2) {
-    let dff = price1 - price2;
-    console.log(dff);
+// function car(price1 , price2) {
+//     let dff = price1 - price2;
+//     console.log(dff);
+// }
+// car(1500, 80);
+
+// parameter Funcation or if else add
+// function car(price1, price2) {
+//   if (price1 > price2) {
+//     console.log("Ali is rich");
+//   } else {
+//     console.log("Usman is rich");
+//   }
+// }
+// car(1500, 80);
+
+
+// function age(){
+  
+// }
+
+function checkAvailability(fruitsArray) {
+    // User se input lena
+    var userInput = prompt("Please enter a fruit name:");
+
+    // Array mein diye gaye fruit naam ko check karna
+    var isAvailable = fruitsArray.includes(userInput);
+
+    // Agar fruit naam array mein maujood hai, toh alert show karna
+    if (isAvailable) {
+        alert("This is available");
+    } else {
+        alert("This is not available");
+    }
 }
-car(1500, 80);
+
+// Fruits ke array ko define karna
+var fruits = ["apple", "banana", "orange", "grape", "kiwi"];
+
+// Function ko call karna aur fruits ke array ko parameter ke tor par pass karna
+checkAvailability(fruits);
