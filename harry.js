@@ -57,4 +57,73 @@
 //   }
 // });
 // console.log(data);
-// 
+//
+
+// Asynchronous programing
+
+// let a = 10;
+// let b = 20;
+// console.log(a + b);
+// setTimeout(() => {
+//   a = 100;
+//   b = 200;
+//   console.log(a + b);
+// }, 2000);
+// console.log(a + b);
+
+// callbacks
+
+// function loadScript(src, callback) {
+//     const script = document.createElement("script");
+//     script.src = src;
+//     script.onload = function () {
+//         callback();
+//     }
+//     document.body.appendChild(script);
+// }
+
+// function hello(src) {
+//     alert('Hello World ' + src)
+// }
+
+// loadScript("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist", function () {
+//     hello('TensorFlow');
+// });
+
+// syschronous programing 
+
+// let a = 10;
+// let b = 20;
+// console.log(a + b);
+// a = 100;
+// b = 200;
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
+
+// synchronous programing complex example
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// let d = 40;
+// let e = 50;
+
+
+
+//  Asynchronous funcation simple example
+
+
+function myDisplayer(something) {
+    document.getElementById("demo").innerHTML = something;
+  }
+  
+  function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+  }
+  
+  myCalculator(5, 5, myDisplayer);
+
+  
