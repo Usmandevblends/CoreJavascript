@@ -102,17 +102,27 @@
 
 // QNo
 
-function performAsyncOperation(callback) {
-  console.log("Fetching data...");
+// function performAsyncOperation(callback) {
+//   console.log("Fetching data...");
 
-  setTimeout(function () {
-    const data = { name: "Sample Data" };
-    callback(data);
-  }, 2000);
+//   setTimeout(function () {
+//     const data = { name: "Sample Data" };
+//     callback(data);
+//   }, 2000);
+// }
+
+// function handleData(data) {
+//   console.log("Data received:", data);
+// }
+
+// performAsyncOperation(handleData);
+
+function sayHello() {
+  console.log("Hello");
 }
 
-function handleData(data) {
-  console.log("Data received:", data);
+function add(num1, num2, callback) {
+  console.log(num1 + num2);
+  callback();
 }
-
-performAsyncOperation(handleData);
+add(5, 3, sayHello);
