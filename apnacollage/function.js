@@ -149,4 +149,4 @@
 //     callback3();
 //   }
 //   details(name, age, profession);
-
+// 
