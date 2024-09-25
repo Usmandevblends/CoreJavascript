@@ -1,3 +1,5 @@
+"use strict";
+
 // function sum(a, b) {
 //   console.log(a + b);
 // }
@@ -118,5 +120,77 @@
 //     callback3();
 //   }
 //   details(name, age, profession);
-// 
-"use strict";
+//
+// console.log("Starting...");
+// setTimeout(() => {
+//   console.log("Step 1: First operation");
+//   setTimeout(() => {
+//     console.log("Step 2: Second operation");
+//     setTimeout(() => {
+//       console.log("Step 3: Third operation");
+//       setTimeout(() => {
+//         console.log("Step 4: Fourth operation");
+//         console.log("All steps completed!");function homeTour(callback) {
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+// function welcomeHome(callback) {
+//     console.log('Welcome to Our Home')
+//     setTimeout(() => {
+//       console.log('Please come in')
+//       setTimeout(() => {
+//         console.log('You can sit this side')
+//         setTimeout(() => {
+//           console.log('Can I offer you something to drink?')
+//           callback();
+//         }, 2000)
+//       }, 2000)
+//     }, 2000)
+//   }
+//   welcomeHome(() => {
+//     console.log('I will have a glass of water, thank you!');
+//   });
+console.log("Starting API calls...");
+
+function apiCall1(callback) {
+  setTimeout(function () {
+    console.log("API Call 1 completed");
+    callback();
+  }, 1000);
+}
+
+function apiCall2(callback) {
+  setTimeout(function () {
+    console.log("API Call 2 completed");
+    callback();
+  }, 1000);
+}
+
+function apiCall3(callback) {
+  setTimeout(function () {
+    console.log("API Call 3 completed");
+    callback();
+  }, 1000);
+}
+
+apiCall1(function () {
+  apiCall2(function () {
+    apiCall3(function () {
+      console.log("All API calls completed!");
+    });
+  });
+});
+console.log('Leadders');
+
+function step1() {
+  setTimeout(function () {
+    console.log('Step 1 completed');
+  });
+}
+
+function step2() {
+  setTimeout(function () {
+    console.log('Step 2 completed');
+  });
+}
