@@ -151,46 +151,52 @@
 //   welcomeHome(() => {
 //     console.log('I will have a glass of water, thank you!');
 //   });
-console.log("Starting API calls...");
-
-function apiCall1(callback) {
+// console.log("Starting API calls...");
+// function apiCall1(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 1 completed");
+//         callback();
+//     }, 1000);
+// }
+// function apiCall2(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 2 completed");
+//         callback();
+//     }, 1000);
+// }
+// function apiCall3(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 3 completed");
+//         callback();
+//     }, 1000);
+// }
+// apiCall1(() => {
+//     apiCall2(() => {
+//         apiCall3(() => {
+//             console.log("All API calls completed!");
+//         });
+//     });
+// });
+// console.log('Leaders');
+// function step1(callback) {
+//     setTimeout(() => {
+//         console.log('Step 1 completed');
+//         callback(); // Call the callback function
+//     }, 2000);
+// }
+// function step2(callback) {
+//     setTimeout(() => {
+//         console.log('Step 2 completed');
+//         callback(); // Call the callback function
+//     }, 2000);
+// }
+// step1(() => {
+//     step2(() => {
+//         console.log('All steps completed');
+//     });
+// });
+var promise = new Promise(function (resolve, reject) {
   setTimeout(function () {
-    console.log("API Call 1 completed");
-    callback();
-  }, 1000);
-}
-
-function apiCall2(callback) {
-  setTimeout(function () {
-    console.log("API Call 2 completed");
-    callback();
-  }, 1000);
-}
-
-function apiCall3(callback) {
-  setTimeout(function () {
-    console.log("API Call 3 completed");
-    callback();
-  }, 1000);
-}
-
-apiCall1(function () {
-  apiCall2(function () {
-    apiCall3(function () {
-      console.log("All API calls completed!");
-    });
-  });
+    resolve("Operation successful!");
+  }, 2000);
 });
-console.log('Leadders');
-
-function step1() {
-  setTimeout(function () {
-    console.log('Step 1 completed');
-  });
-}
-
-function step2() {
-  setTimeout(function () {
-    console.log('Step 2 completed');
-  });
-}

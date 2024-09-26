@@ -185,47 +185,61 @@
 //     console.log('I will have a glass of water, thank you!');
 //   });
 
-console.log("Starting API calls...");
+// console.log("Starting API calls...");
 
-function apiCall1(callback) {
-    setTimeout(() => {
-        console.log("API Call 1 completed");
-        callback();
-    }, 1000);
-}
+// function apiCall1(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 1 completed");
+//         callback();
+//     }, 1000);
+// }
 
-function apiCall2(callback) {
-    setTimeout(() => {
-        console.log("API Call 2 completed");
-        callback();
-    }, 1000);
-}
+// function apiCall2(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 2 completed");
+//         callback();
+//     }, 1000);
+// }
 
-function apiCall3(callback) {
-    setTimeout(() => {
-        console.log("API Call 3 completed");
-        callback();
-    }, 1000);
-}
+// function apiCall3(callback) {
+//     setTimeout(() => {
+//         console.log("API Call 3 completed");
+//         callback();
+//     }, 1000);
+// }
 
-apiCall1(() => {
-    apiCall2(() => {
-        apiCall3(() => {
-            console.log("All API calls completed!");
-        });
-    });
+// apiCall1(() => {
+//     apiCall2(() => {
+//         apiCall3(() => {
+//             console.log("All API calls completed!");
+//         });
+//     });
+// });
+
+// console.log('Leaders');
+
+// function step1(callback) {
+//     setTimeout(() => {
+//         console.log('Step 1 completed');
+//         callback(); // Call the callback function
+//     }, 2000);
+// }
+
+// function step2(callback) {
+//     setTimeout(() => {
+//         console.log('Step 2 completed');
+//         callback(); // Call the callback function
+//     }, 2000);
+// }
+
+// step1(() => {
+//     step2(() => {
+//         console.log('All steps completed');
+//     });
+// });
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Operation successful!"); 
+  }, 2000);
 });
-
-
-console.log('Leadders')
-
-function step1() {
-    setTimeout(() => {
-        console.log('Step 1 completed')
-    })
-}
-function step2() {
-    setTimeout(() => {
-        console.log('Step 2 completed')
-    })
-}
