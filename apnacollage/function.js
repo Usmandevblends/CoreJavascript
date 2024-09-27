@@ -238,8 +238,9 @@
 //     });
 // });
 
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Operation successful!"); 
-  }, 2000);
-});
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Operation successful!"); 
+//   }, 2000);
+// });
+

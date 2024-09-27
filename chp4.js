@@ -58,9 +58,3 @@
 // }
 
 // alert(sum)
-
-
-document.querySelector('h1').addEventListener('click', function() {
-    this.style.background = 'teal';
-    this.style.padding = '10px';
-});

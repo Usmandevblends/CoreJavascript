@@ -1,5 +1,3 @@
-"use strict";
-
 // Arrays in Js
 // Collection of Items
 // let marks = [97, 82, 75, 64, 36];
@@ -48,7 +46,4 @@
 //   num = parseInt(prompt("Enter a number: "));
 // }
 // alert(sum)
-document.querySelector('h1').addEventListener('click', function () {
-  this.style.background = 'teal';
-  this.style.padding = '10px';
-});
+"use strict";
