@@ -43,7 +43,7 @@
 
 // const heading = document.getElementById("heading");
 // let data = true;
-// heading.addEventListener("click", () => {
+// heading.addEventListener("click" , () => {
 //   if (data) {
 //     data = false;
 //     heading.style.background = "black";
@@ -90,7 +90,7 @@
 //     hello('TensorFlow');
 // });
 
-// syschronous programing 
+// syschronous programing
 
 // let a = 10;
 // let b = 20;
@@ -110,20 +110,82 @@
 // let d = 40;
 // let e = 50;
 
-
-
 //  Asynchronous funcation simple example
-
 
 // function myDisplayer(something) {
 //     document.getElementById("demo").innerHTML = something;
 //   }
-  
+
 //   function myCalculator(num1, num2, myCallback) {
 //     let sum = num1 + num2;
 //     myCallback(sum);
 //   }
-  
+
 //   myCalculator(5, 5, myDisplayer);
 
+// condition statement example
 
+let a = 5;
+let b = 10;
+let c = a > b ? a - b : b - a;
+console.log(c);
+
+if (a > b) {
+  console.log(a - b);
+} else {
+  console.log(b - a);
+}
+
+// chapter 2 practice example
+/*
+  use logical operators to find whether the age of a person Lies between 10 and 20 ?
+*/
+
+let personAge = 25;
+
+if (personAge >= 10 && personAge <= 20) {
+  console.log("The person's age lies between 10 and 20");
+} else {
+  console.log("The person's age does not lie between 10 and 20");
+}
+
+/*
+  Demonstrate the use of switch cases statements in javascript ?
+*/
+let day = 3;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+
+// write a javascript program to find whether a number is divided by either 2 or 3 ?
+let num = prompt('Enter a number')
+
+if (num % 2 === 0 || num % 3 === 0) {
+  console.log("The number is divided by either 2 or 3");
+} else {
+  console.log("The number is not divided by either 2 or 3");
+}
