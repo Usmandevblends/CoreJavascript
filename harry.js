@@ -125,67 +125,85 @@
 
 // condition statement example
 
-let a = 5;
-let b = 10;
-let c = a > b ? a - b : b - a;
-console.log(c);
+// let a = 5;
+// let b = 10;
+// let c = a > b ? a - b : b - a;
+// console.log(c);
 
-if (a > b) {
-  console.log(a - b);
-} else {
-  console.log(b - a);
-}
+// if (a > b) {
+//   console.log(a - b);
+// } else {
+//   console.log(b - a);
+// }
 
 // chapter 2 practice example
 /*
   use logical operators to find whether the age of a person Lies between 10 and 20 ?
 */
 
-let personAge = 25;
+// let personAge = 25;
 
-if (personAge >= 10 && personAge <= 20) {
-  console.log("The person's age lies between 10 and 20");
-} else {
-  console.log("The person's age does not lie between 10 and 20");
-}
+// if (personAge >= 10 && personAge <= 20) {
+//   console.log("The person's age lies between 10 and 20");
+// } else {
+//   console.log("The person's age does not lie between 10 and 20");
+// }
 
 /*
   Demonstrate the use of switch cases statements in javascript ?
 */
-let day = 3;
+// let day = 3;
 
-switch (day) {
-  case 1:
-    console.log("Monday");
-    break;
-  case 2:
-    console.log("Tuesday");
-    break;
-  case 3:
-    console.log("Wednesday");
-    break;
-  case 4:
-    console.log("Thursday");
-    break;
-  case 5:
-    console.log("Friday");
-    break;
-  case 6:
-    console.log("Saturday");
-    break;
-  case 7:
-    console.log("Sunday");
-    break;
-  default:
-    console.log("Invalid day");
-}
+// switch (day) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:  
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   case 7:
+//     console.log("Sunday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
 
 
 // write a javascript program to find whether a number is divided by either 2 or 3 ?
-let num = prompt('Enter a number')
+// let num = prompt('Enter a number')
 
-if (num % 2 === 0 || num % 3 === 0) {
-  console.log("The number is divided by either 2 or 3");
+// if (num % 2 === 0 || num % 3 === 0) {
+//   console.log("The number is divided by either 2 or 3");
+// } else {
+//   console.log("The number is not divided by either 2 or 3");
+// }
+
+
+
+let iceCream = "chocolate";
+if (iceCream === "chocolate") {
+  alert("Yay, I love chocolate ice cream!");
 } else {
-  console.log("The number is not divided by either 2 or 3");
+  alert("Awwww, but chocolate is my favorite…");
 }
+
+function myFuncation(husbandName, wifeName) {
+  return `${husbandName} ${wifeName}`;
+}
+
+let husbandName = 'Usman';
+let wifeName = 'Maliaka';
+let result = myFuncation(husbandName, wifeName);
+console.log(result); // Output: "Usman Maliaka"
