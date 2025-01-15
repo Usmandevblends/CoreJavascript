@@ -199,11 +199,3 @@ if (iceCream === "chocolate") {
   alert("Awwww, but chocolate is my favorite…");
 }
 
-function myFuncation(husbandName, wifeName) {
-  return `${husbandName} ${wifeName}`;
-}
-
-let husbandName = 'Usman';
-let wifeName = 'Maliaka';
-let result = myFuncation(husbandName, wifeName);
-console.log(result); // Output: "Usman Maliaka"
