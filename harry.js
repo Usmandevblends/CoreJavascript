@@ -158,7 +158,7 @@
 //   case 1:
 //     console.log("Monday");
 //     break;
-//   case 2:  
+//   case 2:
 //     console.log("Tuesday");
 //     break;
 //   case 3:
@@ -180,7 +180,6 @@
 //     console.log("Invalid day");
 // }
 
-
 // write a javascript program to find whether a number is divided by either 2 or 3 ?
 // let num = prompt('Enter a number')
 
@@ -190,12 +189,41 @@
 //   console.log("The number is not divided by either 2 or 3");
 // }
 
+// let iceCream = "chocolate";
+// if (iceCream === "chocolate") {
+//   alert("Yay, I love chocolate ice cream!");
+// } else {
+//   alert("Awwww, but chocolate is my favorite…");
+// }
 
 
-let iceCream = "chocolate";
-if (iceCream === "chocolate") {
-  alert("Yay, I love chocolate ice cream!");
-} else {
-  alert("Awwww, but chocolate is my favorite…");
+const button = document.getElementsByClassName('btn');
+
+button.addEventListener("click", updateName);
+
+function updateName() {
+  const name = prompt("Enter a new name");
+  button.textContent = `Player 1: ${name}`;
 }
 
+<label> Your name
+    [text* your-name autocomplete:name] </label>
+
+<label> Your email * 
+    [email* your-email autocomplete:email] </label>
+
+<label> Phone Number *
+[text* text-781]
+</label>
+<label> Subject
+    [text* your-subject] </label>
+
+<label> Your message (optional)
+    [textarea your-message] </label>
+
+[checkbox checkbox-763 use_label_element " Yes, I agree to below *" ]
+
+By providing your phone number, you consent to receive recurring text messages from Cerca Dating related to updates, promotions, and customer support, in accordance with our <a href="/privacy-policy" >privacy policy</a>. Message frequency will vary based on your engagement. Standard message and data rates may apply. Reply "STOP" to opt-out at any time, or "HELP CENTER for assistance.
+
+
+[submit "Submit"]
