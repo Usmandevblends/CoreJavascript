@@ -40,24 +40,24 @@ sum(1, 2);
 
 //   showClock();
 
-function showClock() {
-  setInterval(() => {
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
+// function showClock() {
+//   setInterval(() => {
+//     const now = new Date();
+//     let hours = now.getHours();
+//     const minutes = now.getMinutes();
+//     const seconds = now.getSeconds();
 
     
-    // Display the current time
-    console.log(`${hours}:${minutes}:${seconds}`);
+//     // Display the current time
+//     console.log(`${hours}:${minutes}:${seconds}`);
     
-  }, 1000);
-  if (now.getHours() > 0) {
-    console.log("Good Morning!");
-  }
-}
+//   }, 1000);
+//   if (now.getHours() > 0) {
+//     console.log("Good Morning!");
+//   }
+// }
 
-showClock();
+// showClock();
 // practice set
 // Q1: Write a program to print the marks of student in an object using for loop
 
@@ -78,7 +78,6 @@ let num = {
   rohan: 70,
   akash: 70,
 };
-
 for (let key in num) {
   console.log(key + " : " + num[key]);
 }
@@ -112,3 +111,51 @@ function findMean(num1, num2, num3, num4, num5) {
 }
 
 console.log(findMean(5, 100, 200, 400, 500));
+
+
+
+
+
+
+/* create a faulty calculator using Javascript
+This faulty calculator does following:
+
+1. It take two numbers as input from the user 
+2. It perfomes wrong operation as follows
+
++ -----> -
+* -----> + 
+- -----> /
+/ -----> **
+*/
+
+
+
+function faultyCalculator() {
+  // Step 1: Get user inputs
+  const num1 = parseFloat(prompt("Enter the first number:")); // Input first number
+  const num2 = parseFloat(prompt("Enter the second number:")); // Input second number
+  const operation = prompt("Enter the operation (+, -, *, /):"); // Input operation
+
+  let result; // Declare a variable to store the result
+
+  // Step 2: Apply faulty logic using if-else
+  if (operation === "+") {
+      result = num1 - num2; // Faulty: Addition replaced with subtraction
+  } else if (operation === "-") {
+      result = num1 / num2; // Faulty: Subtraction replaced with division
+  } else if (operation === "*") {
+      result = num1 + num2; // Faulty: Multiplication replaced with addition
+  } else if (operation === "/") {
+      result = num1 ** num2; // Faulty: Division replaced with exponentiation
+  } else {
+      result = "Invalid operation!"; // Handle invalid input
+  }
+
+  // Step 3: Display the result
+  alert(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+}
+
+// Call the faulty calculator function
+faultyCalculator();
+
