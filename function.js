@@ -1,16 +1,16 @@
-function nice(name) {
-  console.log("Hey " + name + " your are nice");
-  console.log("Hey " + name + " your are nice");
-  console.log("Hey " + name + " your are Good");
-  console.log("Hey " + name + " your are Tshirt is nice");
-  console.log("Hey " + name + " your are course is too good");
-}
-nice("Usman");
+// function nice(name) {
+//   console.log("Hey " + name + " your are nice");
+//   console.log("Hey " + name + " your are nice");
+//   console.log("Hey " + name + " your are Good");
+//   console.log("Hey " + name + " your are Tshirt is nice");
+//   console.log("Hey " + name + " your are course is too good");
+// }
+// nice("Usman");
 
-function sum(a, b) {
-  console.log(a + b);
-}
-sum(1, 2);
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+// sum(1, 2);
 
 
 
@@ -61,26 +61,26 @@ sum(1, 2);
 // practice set
 // Q1: Write a program to print the marks of student in an object using for loop
 
-let obj = {
-  harry: 98,
-  rohan: 70,
-  akash: 70,
-};
+// let obj = {
+//   harry: 98,
+//   rohan: 70,
+//   akash: 70,
+// };
 
-for (let key in obj) {
-  console.log(key, obj[key]);
-}
+// for (let key in obj) {
+//   console.log(key, obj[key]);
+// }
 
 // useing for in loop
 
-let num = {
-  harry: 98,
-  rohan: 70,
-  akash: 70,
-};
-for (let key in num) {
-  console.log(key + " : " + num[key]);
-}
+// let num = {
+//   harry: 98,
+//   rohan: 70,
+//   akash: 70,
+// };
+// for (let key in num) {
+//   console.log(key + " : " + num[key]);
+// }
 
 
 // Q3: write a program to print "try agin" until the user enters the correct number 
@@ -104,13 +104,13 @@ for (let key in num) {
 
 // Q4: Write a function to find mean of 5 number
 
-function findMean(num1, num2, num3, num4, num5) {
-  let sum = num1 + num2 + num3 + num4 + num5;
-  let mean = sum / 5;
-  return mean;
-}
+// function findMean(num1, num2, num3, num4, num5) {
+//   let sum = num1 + num2 + num3 + num4 + num5;
+//   let mean = sum / 5;
+//   return mean;
+// }
 
-console.log(findMean(5, 100, 200, 400, 500));
+// console.log(findMean(5, 100, 200, 400, 500));
 
 
 
